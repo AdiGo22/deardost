@@ -1,22 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./App.{js,jsx,ts,tsx}",
-    "./components/**/*.{js,jsx,ts,tsx}",
-    "./screens/**/*.{js,jsx,ts,tsx}",
-    "./**/*.{js,jsx,ts,tsx}",
-  ],
+  // NOTE: Update this to include the paths to all of your component files.
+  content: ["./app/**/*.{js,jsx,ts,tsx}"],
+  presets: [require("nativewind/preset")],
   theme: {
-    extend: {
-      colors: {
-        primary: '#0f0d23',
-        secondary: '#A8B5DB',
-        accent: '#ffd96a',
-        deep: '#151312',
-        faded: '#dbeafe',
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }
-
